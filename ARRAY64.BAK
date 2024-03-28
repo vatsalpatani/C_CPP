@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[5],i,j,c;
+	clrscr();
+	for(i=0;i<5;i++)
+	{
+		printf("\nenter a[%d]..",i);
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		for(i=0;i<5;i++)
+		{
+			if(a[i]>a[i+1])
+			{
+				c=a[i];
+				a[i]=a[i+1];
+				a[i+1]=c;
+			}
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("\nnow a[%d] = %d",i,a[i]);
+	}
+	getch();
+}

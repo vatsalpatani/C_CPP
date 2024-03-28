@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,f;
+	clrscr();
+	printf("enter n..");
+	scanf("%d",&n);
+	f = fact(n);
+	printf("\nfactorial value of %d is %d" , n , f);
+	getch();
+}
+int fact(n)
+{
+	int f=1;
+	if(n==1)
+		return 1;
+	f= n * fact(n-1);
+	return f;
+}

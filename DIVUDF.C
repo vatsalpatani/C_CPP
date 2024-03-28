@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+float div();
+void main()
+{
+	float n;
+	clrscr();
+	n=div();
+	printf("\n answer=%.2f",n);
+	getch();
+}
+float div()
+{
+	float a,b,c;
+	printf("\n enter the first number ");
+	scanf("%f",&a);
+	printf("\n enter the second number ");
+	scanf("%f",&b);
+	c=a/b;
+	return c;
+}

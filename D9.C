@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	char ch;
+	clrscr();
+	printf("enter the character...");
+	scanf("%c",&ch);
+	ch>=65 && ch<=90?printf("Upper"):
+	ch>=97 && ch<=122?printf("Lower"):
+	ch>=48 && ch<=57?printf("Number"):
+	ch==32?printf("space"):
+	printf("Symbol");
+	getch();
+}

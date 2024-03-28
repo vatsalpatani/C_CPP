@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int *a,b=10;
+	clrscr();
+	a=&b;
+	printf("\n address of a is %u",a);
+	getch();
+}

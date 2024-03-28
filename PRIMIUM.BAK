@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char g,li;
+	int age;
+	long amt;
+	clrscr();
+	printf("\n enter your gender m or f..");
+	scanf("%c",&g);
+	printf("\n enter your age..");
+	scanf("%d",&age);
+	printf("\n where are you live.. type c for city and v for village..");
+	cscanf("%c",&li);
+	if(li=='c')
+	{
+		if(g=='m')
+		{
+			if(age>=25 && age<=40)
+			{
+				printf("\n you are eligible for insuarance..");
+				printf("\n enter your insuarance amount...");
+				scanf("%ld",&amt);
+				printf("\n your premium is...%ld",amt*10/100);
+			}
+			else
+				printf("you are not eligible for insuarance..");
+		}
+		if(g=='f')
+		{
+			if(age>=25 && age<=35)
+			{
+				printf("\n you are eligible for insuarance..");
+				printf("\n enter your insuarance amount...");
+				scanf("%ld",&amt);
+				printf("\n your premium is...%ld",amt*15/100);
+			}
+			else
+				printf("you are not eligible for insuarance..");
+		}
+	else if(li=='v')
+
+
+
+
+}

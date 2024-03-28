@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	long int in;
+	clrscr();
+	printf("\n enter your income...");
+	scanf("%ld",&in);
+	in<110000?printf("your tax is nil"):
+	in>110000 && in<150000?printf("your tax is...%ld",in*10/100):
+	in>150000 && in<300000?printf("your tax is...%ld",in*20/100):
+	in>300000 && in<500000?printf("your tax is...%ld",in*30/100):
+	printf("your tax is...%ld",in*40/100);
+	getch();
+}

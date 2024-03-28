@@ -1,0 +1,15 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,n;
+	clrscr();
+	printf("enter n..");
+	scanf("%d",&n);
+	for(i=6;i<=n;i+=6)
+	{
+		printf("\n%d",i);
+	}
+	getch();
+}

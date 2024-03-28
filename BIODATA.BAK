@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	char name[] ="patani vatsal";
+	char dob[]="17/09/2003";
+	char age[]="18";
+	char address[]="d-707 , shyamji krushna verma township , near sunrise school ,\t\t railnagar , rajkot-360001
+
+}

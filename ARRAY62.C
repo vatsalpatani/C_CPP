@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[2],b[2],c[4];
+	int i,k=2;
+	clrscr();
+	for(i=0;i<2;i++)
+	{
+		printf("\nenter a[%d]..",i);
+		cscanf("%c",&a[i]);
+		c[i]=a[i];
+	/*/}
+	k=i;
+	for(i=0;i<2;i++)
+	{  */
+		printf("\nenter b[%d]..",i);
+		cscanf("%c",&b[i]);
+		c[k]=b[i];
+		k++;
+	}
+	for(i=0;i<4;i++)
+	{
+		printf("\nc[%d] = %c",i,c[i]);
+	}
+	getch();
+
+}

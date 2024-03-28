@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i, j, k, temp,a[3][3];
+	clrscr();
+	printf("Enter array elements in a:\n");
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+		scanf("%d", &a[i][j]);
+		}
+	}
+	for (i=0; i<3; i++)
+	{
+		for (k=0; k<3; k++)
+		{
+			for (j=0; j<3; j++)
+			{
+				do
+				{
+				temp = a[k][j];
+				a[k][j] = a[k][j+1];
+				a[k][j+1] = temp;
+				}
+				while (a[k][j] > a[k][j+1]);
+			}
+		}
+	}
+	printf("Sorted array elements are:\n");
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 3; j++)
+		{
+			printf("\n%d", a[i][j]);
+		}
+	}
+	getch();
+}
